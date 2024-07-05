@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x Clone</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-black overflow-x-hidden max-md:max-w-[100vw] m-0 p-0">
+    <div class="boss w-[100vw] h-[180vh] max-md:h-[100vh]  md:flex border-none text-white">
+        <div class="first fixed md:h-[100vh] left-[-350vw] md:left-0 md:w-[18vw] md:ml-[8vw]">
+            <div class="logo invert mt-3 mb-2 px-3 max-md:absolute max-md:left-[390vw]">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sidebar flex items-end ">
+
+                <ul class="flex flex-col mx-0 text-[20px]">
+                    <li
+                        class="flex justify-center items-center gap-3 md:w-fit md:py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">Home</span><span
+                            class="hidden md:block pl-2 font-bold">Home</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            search
+                        </span><span class="hidden md:block pl-2">Explore</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            notifications
+                        </span><span class="hidden md:block pl-2">Notifications</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            mail
+                        </span><span class="hidden md:block pl-2">Messages</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            chat
+                        </span><span class="hidden md:block pl-2">Grok</span>
+                    </li>
+
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            bookmark
+                        </span><span class="hidden md:block pl-2">Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            groups
+                        </span><span class="hidden md:block pl-2">Communities</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            workspace_premium
+                        </span><span class="hidden md:block pl-2">Premium</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            person
+                        </span><span class="hidden md:block pl-2">Profile</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 md:w-fit py-3 md:px-3  hover:bg-[rgb(33,36,38)] rounded-full hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-[28px]">
+                            pending
+                        </span><span class="hidden md:block pl-2">More</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="h-12 w-60 bg-[rgb(29,155,240)] text-white font-bold rounded-full absolute top-[81.5vh] flex items-center justify-center cursor-pointer">
+                <button class="px-3 text-[16px]">Post</button>
+            </div>
+            <div class="cursor-pointer">
+                <div
+                    class="h-14 w-60 mt-2 hover:bg-[rgb(33,36,38)] text-white rounded-full absolute left-[1vw] top-[88.5vh] flex justify-start items-center">
+                    <div class="img">
+                        <img src="https://pbs.twimg.com/profile_images/1288376443089559552/WJhbxkML_x96.jpg" alt=""
+                            class="rounded-[50%] h-10 w-12 ml-2">
+                    </div>
+                    <div class="font-bold relative bottom-2">Raghav Bhargava</div>
+                </div>
+                <div class="relative left-[5vw] top-[12vh] text-[14px] text-[rgb(113,118,123)] mt-2">@RaghavBhargav10
+                </div>
+            </div>
+        </div>
+        <div
+            class="second max-md:h-[100vh] w-[100vw] md:absolute md:left-[27vw] md:md:border md:border-t-0 md:border-b-0 md:border-[rgb(47,51,54)] md:w-[38vw] md:flex md:flex-wrap h-[254vh]">
+            <div
+                class="topbar h-[7vh] fixed w-[100vw] md:w-[38vw] border border-black border-b-[rgb(34,37,39)] font-bold flex z-50 max-md:top-[5vh] ">
+                <div class="left w-1/2 hover:bg-[rgb(33,36,38)] h-[100%] flex justify-center items-center">
+                    For you
+                </div>
+                <div
+                    class="right w-1/2 hover:bg-[rgb(33,36,38)] h-[100%] flex justify-center items-center text-[rgb(113,118,123)]">
+                    Following
+                </div>
+                <div
+                    class="fixed w-16 h-1 bg-[rgb(29,155,240)] top-[6.3vh] left-[18vw] md:top-[6.3vh] md:left-[34.6vw] rounded-full max-md:top-[11.3vh]">
+                </div>
+            </div>
+            <div class="absolute top-[7vh] w-[38vw] whatshap items-start flex h-24 ">
+                <div class="img pl-4 pt-6">
+                    <img src="https://pbs.twimg.com/profile_images/1288376443089559552/WJhbxkML_x96.jpg" alt=""
+                        class="rounded-[50%] h-10 w-12 max-md:absolute max-md:top-[-50px] max-md:w-8 max-md:h-8">
+                </div>
+                <input type="text"
+                    class="max-md:absolute max-md:top-[-100vh] w-full ml-0 pl-2 pt-8 bg-black text-xl text-white outline-none mx-5"
+                    placeholder="What is happening?!">
+            </div>
+            <!-- <div class="reply relative top-[18vh] left-[4.2vw] text-[rgb(29,155,240)]">
+                <span class="material-symbols-outlined text-[15px]">
+                    public
+                </span>
+                <span class="relative bottom-[3px] text-[15px] font-bold">Everyone can reply</span>
+            </div> -->
+            <div
+                class="absolute max-md:top-[-202px] top-[20vh] w-[38vw] border-b-2 border-[rgb(47,51,54)] text-[rgb(29,155,240)] flex justify-start pl-16 pb-3 gap-4">
+                <span class="max-md:absolute max-md:top-[-202px] material-symbols-outlined cursor-pointer text-xl">
+                    imagesmode
+                </span>
+                <span class="max-md:absolute max-md:top-[-202px] material-symbols-outlined cursor-pointer text-xl">
+                    gif_box
+                </span>
+                <span class="max-md:absolute max-md:top-[-202px] material-symbols-outlined cursor-pointer text-xl">
+                    ballot
+                </span>
+                <span class="max-md:absolute max-md:top-[-202px] material-symbols-outlined cursor-pointer text-xl">
+                    mood
+                </span>
+                <span class="max-md:absolute max-md:top-[-202px] material-symbols-outlined cursor-pointer text-xl">
+                    calendar_clock
+                </span>
+                <span
+                    class="max-md:absolute max-md:top-[-202px] material-symbols-outlined opacity-50 cursor-pointer text-xl">
+                    location_on
+                </span>
+
+            </div>
+            <div
+                class="h-10 w-20 bg-[rgb(29,155,240)] text-white font-bold rounded-full absolute right-[1vw] top-[19vh] flex items-center justify-center max-md:top-[-200px] opacity-50">
+                <button class="px-3 text-[16px] ">Post</button>
+            </div>
+            <div
+                class="border-b-2 border-[rgb(47,51,54)] text-[rgb(29,155,240)] flex justify-center p-3 absolute top-[25vh] w-[38vw] max-md:w-[100vw] max-md:top-[110px]">
+                Show 233 posts
+            </div>
+            <div class="posts absolute top-[32vh] max-md:top-[19vh] max-md:w-[100vw]">
+                <div class="post1 border-b-[1px] border-[rgb(47,51,54)]">
+                    <div class="post">
+                        <div class="flex items-center max-md:w-full">
+                            <div class="img pl-3 pt-[15px]">
+                                <img src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg"
+                                    alt="" class="rounded-[50%] h-10 w-10">
+                            </div>
+                            <span
+                                class="m-2 mt-3 font-bold flex items-center hover:underline cursor-pointer relative top-[-8px] max-md:text-sm">
+                                non aesthetic things
+                                <span>
+                                    <img src="twitter-verified-badge.svg" alt=""
+                                        class="w-4 h-4 object-contain mt-1 ml-[3px]">
+                                </span>
+                            </span>
+                            <span
+                                class="flex mt-[5px] gap-[3px] text-[rgb(113,118,123)] relative top-[-8px]">@PicturesFoIder<span
+                                    class="relative top-[-4px]"> . </span> 20h
+                            </span> <span
+                                class="relative top-[-9px] left-[10.5vw] text-[rgb(113,118,123)] font-bold cursor-pointer text-xl max-md:left-2 max-md:top-[-11px]">
+                                ...</span>
+                        </div>
+                        <div class="ml-14 pl-1 relative top-[-22px]">
+                            How much it costs to feed 6 kids 😳
+                        </div>
+                        <div
+                            class="flex justify-center items-center ml-14 mr-6 border border-[rgb(47,51,54)] rounded-[5%] w-[32vw] max-md:w-[75vw] max-md:p-0">
+                            <video src="video1.mp4"
+                                class="object-contain rounded-[5%]  max-md:w-fit max-md:rounded-[5%] max-md:object-cover"
+                                controls></video>
+                        </div>
+                        <div class="icons flex ">
+
+                        </div>
+
+                    </div>
+                    <div class="icons flex mx-3 my-4 ml-16 text-[rgb(113,118,123)] max-md:w-[100vw] ">
+                        <div class=" flex items-center gap-16 max-md:gap-4 max-md:text-sm">
+                            <div class="icon">
+                                <span
+                                    class="material-symbols-outlined text-xl hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    chat_bubble
+                                </span>
+                                <span class="relative top-[-4px]">14K</span>
+                            </div>
+                            <div class="icon">
+                                <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    cached
+                                </span>
+                                <span class="relative top-[-6px]">7.4K</span>
+                            </div>
+                            <div class="icon">
+                                <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    favorite
+                                </span>
+                                <span class="relative top-[-6px]">46K</span>
+                            </div>
+                            <div class="icon">
+                                <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    bar_chart
+                                </span>
+                                <span class="relative top-[-6px]">14M</span>
+                            </div>
+                        </div>
+                        <div class="ml-8 max-md:ml-4"></div>
+                        <div class="icon relative ">
+                            <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                bookmark
+                            </span>
+                        </div>
+                        <div class="icon ml-2">
+                            <span
+                                class="material-symbols-outlined text-xl relative top-[-4px] hover:text-[rgb(29,155,240)] cursor-pointer">
+                                ios_share
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="post2 border-b-[1px] border-[rgb(47,51,54)]">
+                    <div class="post">
+                        <div class="flex items-center">
+                            <div class="img pl-3 pt-[15px]">
+                                <img src="https://pbs.twimg.com/profile_images/1639686338696867841/9WUmqlgt_bigger.jpg"
+                                    alt="" class="rounded-[50%] h-10 w-10">
+                            </div>
+                            <span
+                                class="m-2 mt-3 font-bold flex items-center hover:underline cursor-pointer relative top-[-8px]">
+                                FadeHubb
+                                <span>
+                                    <img src="twitter-verified-badge.svg" alt=""
+                                        class="w-4 h-4 object-contain mt-1 ml-[3px]">
+                                </span>
+                            </span>
+                            <span
+                                class="flex mt-[5px] gap-[3px] text-[rgb(113,118,123)] relative top-[-8px]">@FadeHubb<span
+                                    class="relative top-[-4px]"> . </span> 12h
+                            </span><span
+                                class="relative top-[-9px] left-[17.3vw] text-[rgb(113,118,123)] font-bold cursor-pointer text-xl">
+                                ...</span>
+                        </div>
+                        <div class="ml-14 pl-1 relative top-[-22px]">
+                            Getting older is realizing why Peter Parker really took his mask off😳
+                        </div>
+                        <div
+                            class="flex justify-center items-center ml-14 mr-6 border border-[rgb(47,51,54)] rounded-[5%] w-[32vw] max-md:w-[75vw] max-md:p-0">
+                            <video src="video2.mp4"
+                                class=" h-[65vh] object-contain rounded-[5%] max-md:w-fit max-md:rounded-[5%] max-md:object-scale-down"
+                                controls></video>
+                        </div>
+                    </div>
+                    <div class="icons flex mx-3 my-4 ml-16 text-[rgb(113,118,123)]">
+                        <div class=" flex items-center gap-16 max-md:gap-4 max-md:text-sm">
+                            <div class="icon">
+                                <span
+                                    class="material-symbols-outlined text-xl hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    chat_bubble
+                                </span>
+                                <span class="relative top-[-4px]">14K</span>
+                            </div>
+                            <div class="icon">
+                                <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    cached
+                                </span>
+                                <span class="relative top-[-6px]">7.4K</span>
+                            </div>
+                            <div class="icon">
+                                <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    favorite
+                                </span>
+                                <span class="relative top-[-6px]">46K</span>
+                            </div>
+                            <div class="icon">
+                                <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                    bar_chart
+                                </span>
+                                <span class="relative top-[-6px]">14M</span>
+                            </div>
+                        </div>
+                        <div class="ml-8 max-md:ml-4"></div>
+                        <div class="icon relative ">
+                            <span class="material-symbols-outlined hover:text-[rgb(29,155,240)] cursor-pointer">
+                                bookmark
+                            </span>
+                        </div>
+                        <div class="icon ml-2">
+                            <span
+                                class="material-symbols-outlined text-xl relative top-[-4px] hover:text-[rgb(29,155,240)] cursor-pointer">
+                                ios_share
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav fixed bottom-0 w-[102vw] border-[rgb(47,51,54)] border-t-2 flex justify-around py-3 bg-black md:bottom-[-100vh]">
+                <span class="material-symbols-outlined text-[35px]">Home</span>
+                <span class="material-symbols-outlined text-[35px]">
+                    search
+                </span>
+                <span class="material-symbols-outlined text-[35px]">
+                    mail
+                </span>
+                <span class="material-symbols-outlined text-[35px]">
+                    notifications
+                </span>
+                <span class="material-symbols-outlined text-[35px]">
+                    chat
+                </span>
+                <span class="material-symbols-outlined text-[35px]">
+                    groups
+                </span>
+            </div>
+        </div>
+        <div class="third w-[35vw] absolute right-[-1.1vw] max-md:absolute max-md:top-[-200vh] max-md:h-0">
+            <div class="search mx-8 my-2 w-[45vw] z-40">
+                <input type="text" class="w-1/2 bg-[rgba(32,35,36,1)] text-white rounded-full px-4 py-2"
+                    placeholder="Search">
+            </div>
+            <div
+                class="premium mx-8 my-3 py-5 px-3 bg-[rgb(0 0 0)] border-[0.5px] border-[rgb(47,51,54)] w-[22vw] rounded-xl h-[23vh] z-40">
+                <span class="font-bold text-2xl">Subscribe to Premium</span><br>
+                <span class="text-[16px]">Subscribe to unlock new features and if eligible, receive a share of ads
+                    revenue.</span><br>
+                <div
+                    class="h-12 w-24 bg-[rgb(29,155,240)] text-white font-bold rounded-full absolute right-[26vw] top-[23vh] flex items-center justify-center p-3">
+                    <button class="px-3 text-[16px]">Subscribe</button>
+                </div>
+
+            </div>
+            <div
+                class="whats z-40 mx-8 my-3 py-5  bg-[rgb(0 0 0)] border-[0.5px] border-[rgb(47,51,54)] w-[22vw] rounded-xl space-y-3 ">
+                <h1 class="text-xl font-bold px-3">What's Happening?!</h1>
+                <div class="h-[10vh] cursor-pointer hover:bg-[rgb(7,8,8)]">
+                    <div class="flex">
+                        <img src="https://pbs.twimg.com/semantic_core_img/1806377762862583808/MliZshS1?format=jpg&name=240x240"
+                            alt="" class="w-[115px] h-[70px] rounded-[15%] px-3 object-cover">
+                        <span class="font-bold text-white">Portugal vs Slovenia</span>
+                    </div>
+                    <div class="relative text-[11px] bottom-10 left-[115px] text-[rgb(113,118,123)]">UEFA European
+                        Championship
+                        ·
+                        Last night
+                    </div>
+                </div>
+                <div class="item my-3 px-3 p-3 hover:bg-[rgb(7,8,8)] cursor-pointer">
+                    <div class="text-sm text-gray-200">Trending in India</div>
+                    <div class="font-bold">#NEETUGUPDATE</div>
+                    <div class="text-sm text-gray-200">40.2k Posts</div>
+                </div>
+                <div class="item my-3 px-3 p-3 hover:bg-[rgb(7,8,8)] cursor-pointer">
+                    <div class="text-sm text-gray-200">Sports · Trending</div>
+                    <div class="font-bold">#INDVSZIM</div>
+                    <div class="text-sm text-gray-200">17.2k Posts</div>
+                </div>
+                <div class="item my-3 px-3 p-3 hover:bg-[rgb(7,8,8)] cursor-pointer">
+                    <div class="text-sm text-gray-200">Politics · Trending</div>
+                    <div class="font-bold">#PMModi</div>
+                    <div class="text-sm text-gray-200">2176 Posts</div>
+                </div>
+                <div class="text-blue-600 underline my-5 cursor-pointer px-3">Show More</div>
+            </div>
+            <div
+                class="follow z-40 mx-8 mt-3 pt-5  bg-[rgb(0 0 0)] border-[0.5px] border-[rgb(47,51,54)] w-[22vw] rounded-xl">
+                <h1 class="text-xl font-bold px-3">Who to Follow</h1>
+                <div class="item my-3 px-3 p-3 ">
+                    <div class="cursor-pointer text-gray-200 flex hover:bg-[rgb(7,8,8)]">
+                        <div class="img ">
+                            <img src="https://pbs.twimg.com/profile_images/1252153959390883840/FxHTPYec_bigger.jpg"
+                                alt="" class="rounded-[50%] h-10 w-10">
+                        </div>
+                        <span class="font-bold text-[16px] ml-2 underline">translated cats</span>
+                        <span
+                            class="relative top-[18px] right-[115px] pt-[2px] text-[rgb(113,118,123)]">@TranslatedCats</span>
+                    </div>
+                    <div
+                        class="follow bg-white text-black w-[90px] h-[35px] relative flex justify-center items-center rounded-full font-bold left-[210px] bottom-[40px] cursor-default">
+                        Follow</div>
+                    <div class="cursor-pointer text-gray-200 flex hover:bg-[rgb(7,8,8)]">
+                        <div class="img ">
+                            <img src="https://pbs.twimg.com/profile_images/1536725744029663234/GS1jjuXF_bigger.jpg"
+                                alt="" class="rounded-[50%] h-10 w-10">
+                        </div>
+                        <span class="font-bold text-[16px] ml-2 underline">Hikaru Nakamura<span>
+                                <img src="twitter-verified-badge.svg" alt=""
+                                    class="w-4 h-4 object-contain mt-1 ml-[3px] relative left-[135px] bottom-[22px]">
+                            </span></span>
+                        <span
+                            class="relative top-[18px] right-[135px] pt-[2px] text-[rgb(113,118,123)]">@GMHikaru</span>
+                    </div>
+                    <div
+                        class="follow bg-white text-black w-[90px] h-[35px] relative flex justify-center items-center rounded-full font-bold left-[210px] bottom-[40px] cursor-pointer">
+                        Follow</div>
+                    <div class="cursor-pointer text-gray-200 flex hover:bg-[rgb(7,8,8)]">
+                        <div class="img ">
+                            <img src="https://pbs.twimg.com/profile_images/1787159566100439040/UaGxEXH9_bigger.jpg"
+                                alt="" class="rounded-[50%] h-10 w-10">
+                        </div>
+                        <span class="font-bold text-[16px] ml-2 underline">Pratham</span>
+                        <span class="relative top-[18px] right-[65px] pt-[2px] text-[rgb(113,118,123)]">@Pratham_Padu
+                        </span>
+                    </div>
+                    <div
+                        class="follow bg-white text-black w-[90px] h-[35px] relative flex justify-center items-center rounded-full font-bold left-[210px] bottom-[40px] cursor-pointer">
+                        Follow</div>
+                    <div class="text-blue-600 underline cursor-pointer hover:bg-[rgb(7,8,8)] h-[5vh]">Show More</div>
+                </div>
+            </div>
+            <div
+                class="cursor-pointer z-40 flex justify-center items-center gap-5 relative right-20 text-[12px] m-2 mt-4  text-[rgb(113,118,123)]">
+                <span class="hover:underline">Terms of service</span>
+                <span class="hover:underline">Privacy Policy</span>
+                <span class="hover:underline">Cookie Policy</span>
+            </div>
+            <div
+                class="cursor-pointer flex z-40 justify-center items-center gap-5 relative right-[70px] text-[12px] mt-0 p-2 text-[rgb(113,118,123)]">
+                <span class="hover:underline">Accessibility</span>
+                <span class="hover:underline">Ads Info</span>
+                <span class="hover:underline">More...</span>
+                <span>© 2024 X Corp.</span>
+            </div>
+            <div
+                class="messages z-50 fixed bottom-0 text-white font-bold flex text-2xl justify-around items-center ml-20 border-[1px]  border-[rgb(47,51,54)] w-[25vw] rounded-xl cursor-pointer bg-black max-md:absolute max-md:top-[-100vh]">
+                <div>
+                    Messages
+                </div>
+                <div>
+                    <span class="material-symbols-outlined pt-4">
+                        outgoing_mail
+                    </span>
+                    <span class="material-symbols-outlined pt-4">
+                        keyboard_double_arrow_up
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
